@@ -23,6 +23,8 @@
         android:layout_height="56dp"
         android:gravity="center"
         android:text="로그인"
+        android:fontFamily="@font/suit"
+        android:textFontWeight="700"
         android:textColor="@color/black"
         android:textSize="24dp"
         android:textStyle="bold"
@@ -55,6 +57,7 @@
         <EditText
             android:layout_width="322dp"
             android:layout_height="40dp"
+            android:id="@+id/id_edit"
             android:background="@null"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="45dp"
