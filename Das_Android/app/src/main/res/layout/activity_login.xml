@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FAFAFA"
     tools:context="Activity.Login">
 
     <ImageView
@@ -117,6 +118,7 @@
             android:textColor="@android:color/white"
             android:textSize="16dp"
             android:textStyle="bold" />
+
     </androidx.cardview.widget.CardView>
 
 
