@@ -11,9 +11,9 @@
     <item
         android:id="@+id/search"
         android:title="검색"
-        android:icon="@drawable/img_8"/>
+        android:icon="@drawable/img"/>
     <item
         android:id="@+id/menu"
         android:title="메뉴"
-        android:icon="@drawable/img"/>
+        android:icon="@drawable/ic_launcher_foreground"/>
 </menu>

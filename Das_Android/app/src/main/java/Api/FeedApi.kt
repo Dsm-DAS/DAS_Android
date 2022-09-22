@@ -1,0 +1,4 @@
+package Api
+
+interface FeedApi {
+}

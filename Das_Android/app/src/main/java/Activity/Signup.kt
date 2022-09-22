@@ -1,5 +1,6 @@
 package Activity
 
+import Request.SignupRequest
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import org.techtown.das_android.databinding.ActivitySignupBinding

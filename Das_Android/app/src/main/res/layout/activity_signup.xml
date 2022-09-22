@@ -214,6 +214,7 @@
         android:layout_width="322dp"
         android:layout_height="44dp"
         app:cardCornerRadius="8dp"
+        android:id="@+id/join"
         android:backgroundTint="#FFCCDE"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
