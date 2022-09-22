@@ -170,11 +170,20 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/club_rv"
             android:layout_width="match_parent"
-            android:layout_height="153dp"
+            android:layout_height="154dp"
             android:layout_marginBottom="304dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/club_title" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/student_rv"
+            android:layout_width="match_parent"
+            android:layout_height="154dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/club_title" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -183,9 +192,13 @@
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
         android:layout_height="62dp"
+        app:itemTextColor="#FD3078"
+        app:color="@drawable/color"
         android:background="#EEEEEE"
+        app:itemIconTint="@drawable/color"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:menu="@menu/item_list"
         app:layout_constraintStart_toStartOf="parent">
 
 

@@ -5,13 +5,16 @@
       <map>
         <entry key="..\:/AndroidStudioProject/Das_Android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.146" />
         <entry key="..\:/AndroidStudioProject/Das_Android/app/src/main/res/drawable/button_background.xml" value="0.146" />
+        <entry key="..\:/AndroidStudioProject/Das_Android/app/src/main/res/drawable/color.xml" value="0.1535" />
         <entry key="..\:/AndroidStudioProject/Das_Android/app/src/main/res/drawable/ic_launcher_background.xml" value="0.146" />
         <entry key="..\:/AndroidStudioProject/Das_Android/app/src/main/res/drawable/spinner_background.xml" value="0.1535" />
         <entry key="..\:/AndroidStudioProject/Das_Android/app/src/main/res/font/main_font.xml" value="0.26153846153846155" />
-        <entry key="..\:/AndroidStudioProject/Das_Android/app/src/main/res/layout/activity_login.xml" value="0.4" />
-        <entry key="..\:/AndroidStudioProject/Das_Android/app/src/main/res/layout/activity_main.xml" value="0.23541666666666666" />
+        <entry key="..\:/AndroidStudioProject/Das_Android/app/src/main/res/layout/activity_login.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProject/Das_Android/app/src/main/res/layout/activity_main.xml" value="0.19079780498100465" />
         <entry key="..\:/AndroidStudioProject/Das_Android/app/src/main/res/layout/activity_signin.xml" value="0.23541666666666666" />
+        <entry key="..\:/AndroidStudioProject/Das_Android/app/src/main/res/layout/activity_signup.xml" value="0.2317948717948718" />
         <entry key="..\:/AndroidStudioProject/Das_Android/app/src/main/res/layout/club_list.xml" value="0.23541666666666666" />
+        <entry key="..\:/AndroidStudioProject/Das_Android/app/src/main/res/menu/item_list.xml" value="0.23541666666666666" />
         <entry key="..\:/AndroidStudioProject/Das_Android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.146" />
         <entry key="..\:/github/DAS_Android/Das_Android/app/src/main/res/layout/activity_main.xml" value="0.21666666666666667" />
       </map>

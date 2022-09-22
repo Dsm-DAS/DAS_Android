@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/main"
+        android:title="홈"
+        android:icon="@drawable/img_10"/>
+    <item
+        android:id="@+id/text"
+        android:title="글"
+        android:icon="@drawable/img_6"/>
+    <item
+        android:id="@+id/search"
+        android:title="검색"
+        android:icon="@drawable/img_8"/>
+    <item
+        android:id="@+id/menu"
+        android:title="메뉴"
+        android:icon="@drawable/img"/>
+</menu>
