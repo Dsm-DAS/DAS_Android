@@ -1,11 +1,12 @@
 package Activity
 
+import Fragment.DocumentFragment
+import Fragment.HomeFragment
+import Fragment.MainpageFragment
+import Fragment.SearchFragment
 import android.os.Bundle
-import android.os.PersistableBundle
-import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentTransaction
 import org.techtown.das_android.R
 import org.techtown.das_android.databinding.ActivityMainBinding
 
