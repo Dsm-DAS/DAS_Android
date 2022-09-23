@@ -11,7 +11,7 @@
     <item
         android:id="@+id/search"
         android:title="검색"
-        android:icon="@drawable/img"/>
+        android:icon="@drawable/img_1"/>
     <item
         android:id="@+id/menu"
         android:title="프로필"

@@ -49,7 +49,7 @@
                 android:id="@+id/logo"
                 android:layout_width="80dp"
                 android:layout_height="20dp"
-                android:background="@drawable/img_5"
+                android:background="@drawable/img_4"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/main_alarm"
                 app:layout_constraintHorizontal_bias="0.085"
