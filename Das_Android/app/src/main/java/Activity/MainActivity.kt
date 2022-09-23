@@ -1,9 +1,13 @@
 package Activity
 
+<<<<<<< HEAD
 import Fragment.DocumentFragment
 import Fragment.HomeFragment
 import Fragment.MainpageFragment
 import Fragment.SearchFragment
+=======
+import android.content.Intent
+>>>>>>> main
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
@@ -16,7 +20,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         navigationItemSelect()
     }
 
@@ -38,10 +41,10 @@ class MainActivity : AppCompatActivity() {
         binding.bottomNavigationView.run {
             setOnItemSelectedListener { item ->
                 when (item.itemId) {
-                    R.id.main -> replaceFragment(MainpageFragment())
+                    R.id.main -> replaceFragment(HomeFragment())
                     R.id.text -> replaceFragment(DocumentFragment())
                     R.id.search -> replaceFragment(SearchFragment())
-                    R.id.menu -> replaceFragment(HomeFragment())
+                    R.id.menu -> replaceFragment(MainpageFragment())
                 }
                 true
             }

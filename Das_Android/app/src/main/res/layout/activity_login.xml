@@ -42,23 +42,26 @@
         android:textColor="@color/black"
         android:textSize="20dp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="45dp" />
+        tools:ignore="MissingConstraints" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="322dp"
         android:layout_height="40dp"
         app:cardCornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="45dp">
+        tools:ignore="MissingConstraints">
 
         <EditText
+            android:id="@+id/id_edit"
             android:layout_width="322dp"
             android:layout_height="40dp"
-            android:id="@+id/id_edit"
             android:background="@null"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="45dp"
@@ -67,26 +70,29 @@
 
 
     <TextView
+        android:id="@+id/text2"
         android:layout_width="80dp"
         android:layout_height="32dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:text="비밀번호"
         android:textColor="@color/black"
-        android:id="@+id/text2"
         android:textSize="20dp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.135"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="46dp" />
+        tools:ignore="MissingConstraints" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView2"
         android:layout_width="322dp"
         android:layout_height="40dp"
         app:cardCornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text2"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="45dp">
+        tools:ignore="MissingConstraints">
 
         <EditText
             android:id="@+id/password_edit"

@@ -17,23 +17,6 @@
 
 
         <TextView
-            android:id="@+id/club_title2"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="16dp"
-            android:fontFamily="@font/suit"
-            android:text="동아리"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="p"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.41" />
-
-        <TextView
             android:id="@+id/culblist_all2"
             android:layout_width="80dp"
             android:layout_height="40dp"
@@ -58,20 +41,21 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0">
 
             <ImageView
                 android:id="@+id/logo"
                 android:layout_width="80dp"
-                android:layout_height="19dp"
+                android:layout_height="20dp"
                 android:background="@drawable/img_5"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/main_alarm"
-                app:layout_constraintHorizontal_bias="0.075"
+                app:layout_constraintHorizontal_bias="0.085"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.113" />
+                app:layout_constraintVertical_bias="0.164" />
 
             <ImageView
                 android:id="@+id/main_alarm"
@@ -83,7 +67,7 @@
                 app:layout_constraintHorizontal_bias="0.958"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.08">
+                app:layout_constraintVertical_bias="0.166">
 
             </ImageView>
 
@@ -93,10 +77,9 @@
                 android:layout_height="100dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/main_alarm"
-                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintHorizontal_bias="0.428"
                 app:layout_constraintStart_toStartOf="@+id/logo"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.364" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
                 android:id="@+id/test"
@@ -117,7 +100,7 @@
                 android:id="@+id/main_textView"
                 android:layout_width="200dp"
                 android:layout_height="30dp"
-                android:layout_marginBottom="64dp"
+                android:layout_marginBottom="52dp"
                 android:fontFamily="@font/suit"
                 android:text="동아리 이름을 입력하세요"
                 android:textAlignment="center"
@@ -143,10 +126,10 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/club_title2"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/club_title2"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.747" />
+            app:layout_constraintVertical_bias="0.757" />
 
         <TextView
             android:id="@+id/culblist_all"
@@ -162,7 +145,7 @@
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.75" />
+            app:layout_constraintVertical_bias="0.76" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/club_rv"
@@ -182,6 +165,23 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/club_title" />
+
+        <TextView
+            android:id="@+id/club_title2"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/suit"
+            android:text="동아리"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/culblist_all2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.411" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
