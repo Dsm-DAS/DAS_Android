@@ -14,6 +14,6 @@
         android:icon="@drawable/img"/>
     <item
         android:id="@+id/menu"
-        android:title="메뉴"
+        android:title="프로필"
         android:icon="@drawable/ic_launcher_foreground"/>
 </menu>
