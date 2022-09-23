@@ -23,11 +23,12 @@
         <entry key="..\:/AndroidStudioProject/Das_Android/app/src/main/res/menu/item_list.xml" value="0.23541666666666666" />
         <entry key="..\:/AndroidStudioProject/Das_Android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.146" />
         <entry key="..\:/github/DAS_Android/Das_Android/app/src/main/res/layout/activity_main.xml" value="0.21666666666666667" />
+        <entry key="app/src/main/res/font/main_font.xml" value="0.32064985036340315" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.1513467293715263" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1666949085824354" />
         <entry key="app/src/main/res/layout/activity_signup.xml" value="0.21408711770157554" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.21316033364226136" />
-        <entry key="app/src/main/res/layout/fragment_mainpage.xml" value="0.14922943115234366" />
+        <entry key="app/src/main/res/layout/fragment_mainpage.xml" value="0.24463348388671866" />
         <entry key="app/src/main/res/layout/fragment_search.xml" value="0.21316033364226136" />
         <entry key="app/src/main/res/menu/item_list.xml" value="0.29585292860196666" />
       </map>
