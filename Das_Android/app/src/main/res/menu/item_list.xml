@@ -3,7 +3,7 @@
     <item
         android:id="@+id/main"
         android:title="홈"
-        android:icon="@drawable/img_10"/>
+        android:icon="@drawable/ic_baseline_home_24"/>
     <item
         android:id="@+id/text"
         android:title="글"
