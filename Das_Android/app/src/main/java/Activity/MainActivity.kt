@@ -5,7 +5,9 @@ import Fragment.MypageFragment
 import Fragment.DocumentFragment
 import Fragment.HomeFragment
 import Fragment.SearchFragment
+import android.content.Intent
 import android.os.Bundle
+import android.widget.ArrayAdapter
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import org.techtown.das_android.R
@@ -18,6 +20,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         navigationItemSelect()
+        intent = Intent(this,SignupActivity::class.java)
+        startActivity(intent)
     }
 
 

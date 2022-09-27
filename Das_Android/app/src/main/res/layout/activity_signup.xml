@@ -225,18 +225,19 @@
         tools:ignore="MissingConstraints" />
 
     <Spinner
-        android:id="@+id/grade"
+        android:id="@+id/spinner_grade"
         android:layout_width="100dp"
         android:layout_height="40dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="12dp"
         app:layout_constraintEnd_toStartOf="@+id/classes"
         app:layout_constraintStart_toStartOf="parent"
+        android:gravity="end"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
         tools:ignore="MissingConstraints" />
 
     <Spinner
-        android:id="@+id/classes"
+        android:id="@+id/spinner_class"
         android:layout_width="100dp"
         android:layout_height="40dp"
         android:layout_marginTop="16dp"
@@ -264,7 +265,7 @@
         android:backgroundTint="#FFCCDE"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/classes"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_class"
         android:layout_marginTop="30dp"
         tools:ignore="MissingConstraints">
 
