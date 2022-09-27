@@ -18,4 +18,9 @@ interface UserApi {
     fun signup(
         @Body request : SignupRequest
     ) : Call<Void>
+
+
+
+
+
 }
