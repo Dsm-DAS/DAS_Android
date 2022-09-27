@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="Activity.Signup">
+    tools:context="Activity.SignupActivity">
 
     <ImageView
         android:id="@+id/logo"
@@ -84,7 +84,7 @@
         android:id="@+id/text5"
         android:layout_width="60dp"
         android:layout_height="32dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="50dp"
         android:text="이메일"
         android:textColor="@color/black"
         android:textSize="20dp"
@@ -92,14 +92,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.128"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/cardView1"
         tools:ignore="MissingConstraints" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView2"
-        android:layout_width="322dp"
+        android:layout_width="240dp"
         android:layout_height="40dp"
         app:cardCornerRadius="8dp"
+        android:layout_marginEnd="85dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text5"
@@ -107,7 +108,7 @@
 
         <EditText
             android:id="@+id/email_edit"
-            android:layout_width="322dp"
+            android:layout_width="240dp"
             android:layout_height="40dp"
             android:background="@null"
             tools:ignore="MissingConstraints"
@@ -115,15 +116,37 @@
             tools:layout_editor_absoluteY="417dp" />
     </androidx.cardview.widget.CardView>
 
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="82dp"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView1"
+        android:backgroundTint="#FFCCDE">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:text="Email Check"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:fontFamily="@font/suit"
+            android:textFontWeight="400"/>
+
+    </androidx.cardview.widget.CardView>
+
     <TextView
         android:id="@+id/text1"
         android:layout_width="50dp"
         android:layout_height="32dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="30dp"
         android:text="이름"
         android:textColor="@color/black"
         android:textSize="20dp"
-
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.124"
@@ -155,7 +178,7 @@
         android:id="@+id/text2"
         android:layout_width="80dp"
         android:layout_height="32dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="30dp"
         android:text="비밀번호"
         android:textColor="@color/black"
         android:textSize="20dp"
@@ -190,6 +213,7 @@
         android:id="@+id/textView5"
         android:layout_width="224dp"
         android:layout_height="50dp"
+        android:layout_marginTop="8dp"
         android:text="8~20자 이내, 알파벳 대문자,\특수문자 1자를 포함해야 합니다"
         android:textSize="16dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -239,7 +263,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/classes"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="30dp"
         tools:ignore="MissingConstraints">
 
         <TextView
