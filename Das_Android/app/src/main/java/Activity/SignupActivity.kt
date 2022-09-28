@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
+import android.widget.Toast
 import org.techtown.das_android.R
 import org.techtown.das_android.databinding.ActivitySignupBinding
 
@@ -48,7 +49,7 @@ class SignupActivity : AppCompatActivity() {
                 position: Int,
                 id: Long
             ) {
-
+                hisGrade = binding.spinnerGrade.selectedItem.toString()
             }
 
             override fun onNothingSelected(parent: AdapterView<*>?) {
@@ -62,7 +63,7 @@ class SignupActivity : AppCompatActivity() {
                 position: Int,
                 id: Long
             ) {
-
+                hisClasses = binding.spinnerClass.selectedItem.toString()
             }
 
             override fun onNothingSelected(parent: AdapterView<*>?) {

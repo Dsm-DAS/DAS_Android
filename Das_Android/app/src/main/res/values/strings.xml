@@ -2,6 +2,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <string-array name="classes">
+        <item>반</item>
         <item>1반</item>
         <item>2반</item>
         <item>3반</item>
@@ -9,6 +10,7 @@
     </string-array>
 
     <string-array name="grade">
+        <item>학년</item>
         <item>1학년</item>
         <item>2학년</item>
         <item>3학년</item>
