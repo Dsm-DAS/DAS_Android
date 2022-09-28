@@ -229,10 +229,11 @@
         android:layout_width="100dp"
         android:layout_height="40dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="12dp"
-        app:layout_constraintEnd_toStartOf="@+id/classes"
-        app:layout_constraintStart_toStartOf="parent"
         android:gravity="end"
+        android:layout_marginLeft="45dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
         tools:ignore="MissingConstraints" />
 
@@ -250,10 +251,11 @@
         android:id="@+id/class_num"
         android:layout_width="100dp"
         android:layout_height="40dp"
-        android:layout_marginStart="12dp"
+        android:layout_marginLeft="205dp"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/classes"
+        app:layout_constraintHorizontal_bias="0.565"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
         tools:ignore="MissingConstraints" />
 
@@ -270,6 +272,7 @@
         tools:ignore="MissingConstraints">
 
         <TextView
+            android:id="@+id/tv_signup"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
