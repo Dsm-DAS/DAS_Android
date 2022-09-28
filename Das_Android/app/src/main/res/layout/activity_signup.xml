@@ -127,13 +127,13 @@
         app:layout_constraintHorizontal_bias="0.87"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView1"
-        android:backgroundTint="#FFCCDE">
+        android:backgroundTint="#FD3078">
 
         <TextView
             android:id="@+id/tv_email_check"
             android:layout_width="70dp"
             android:layout_height="40dp"
-            android:text="Email Check"
+            android:text="인증"
             android:gravity="center"
             android:textSize="14sp"
             android:fontFamily="@font/suit"
@@ -229,6 +229,12 @@
         android:layout_width="100dp"
         android:layout_height="40dp"
         android:layout_marginTop="16dp"
+<<<<<<< Updated upstream
+=======
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/spinner_class"
+        app:layout_constraintStart_toStartOf="parent"
+>>>>>>> Stashed changes
         android:gravity="end"
         android:layout_marginLeft="45dp"
         app:layout_constraintEnd_toStartOf="@+id/textView5"
@@ -254,8 +260,12 @@
         android:layout_marginLeft="205dp"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
+<<<<<<< Updated upstream
         app:layout_constraintHorizontal_bias="0.565"
         app:layout_constraintStart_toStartOf="parent"
+=======
+        app:layout_constraintStart_toEndOf="@+id/spinner_class"
+>>>>>>> Stashed changes
         app:layout_constraintTop_toBottomOf="@+id/textView5"
         tools:ignore="MissingConstraints" />
 

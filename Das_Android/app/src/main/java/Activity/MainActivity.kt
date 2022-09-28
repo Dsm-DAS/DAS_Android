@@ -20,8 +20,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         navigationItemSelect()
-        intent = Intent(this,SignupActivity::class.java)
-        startActivity(intent)
+        //intent = Intent(this,SignupActivity::class.java)
+        //startActivity(intent)
     }
 
 
