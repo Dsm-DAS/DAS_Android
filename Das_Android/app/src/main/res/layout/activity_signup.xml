@@ -88,29 +88,19 @@
         android:id="@id/cardView"
         android:layout_width="70dp"
         android:layout_height="40dp"
-        android:layout_marginTop="62dp"
         android:backgroundTint="#FFCCDE"
         app:cardCornerRadius="8dp"
+        android:layout_marginTop="62dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.87"
         app:layout_constraintStart_toStartOf="parent"
-<<<<<<< Updated upstream
-        app:layout_constraintTop_toBottomOf="@+id/cardView1"
-        android:backgroundTint="#FD3078">
-=======
-        app:layout_constraintTop_toBottomOf="@+id/textView3">
->>>>>>> Stashed changes
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:ignore="MissingConstraints">
 
         <TextView
             android:id="@+id/tv_signup_EmailCheck"
             android:layout_width="70dp"
             android:layout_height="40dp"
-<<<<<<< Updated upstream
-            android:text="인증"
-            android:gravity="center"
-            android:textSize="14sp"
-=======
->>>>>>> Stashed changes
             android:fontFamily="@font/suit"
             android:gravity="center"
             android:text="전송"
@@ -248,22 +238,11 @@
         android:layout_width="100dp"
         android:layout_height="40dp"
         android:layout_marginTop="16dp"
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-        android:layout_marginEnd="12dp"
-        app:layout_constraintEnd_toStartOf="@+id/spinner_class"
-        app:layout_constraintStart_toStartOf="parent"
->>>>>>> Stashed changes
         android:gravity="end"
         android:layout_marginLeft="45dp"
-        app:layout_constraintEnd_toStartOf="@+id/textView5"
-        app:layout_constraintHorizontal_bias="0.0"
-=======
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toStartOf="@+id/spinner_class"
         app:layout_constraintHorizontal_bias="1.0"
->>>>>>> Stashed changes
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
         tools:ignore="MissingConstraints" />
@@ -284,12 +263,8 @@
         app:cardCornerRadius="8dp"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-<<<<<<< Updated upstream
         app:layout_constraintHorizontal_bias="0.565"
         app:layout_constraintStart_toStartOf="parent"
-=======
-        app:layout_constraintStart_toEndOf="@+id/spinner_class"
->>>>>>> Stashed changes
         app:layout_constraintTop_toBottomOf="@+id/textView5"
         tools:ignore="MissingConstraints">
 

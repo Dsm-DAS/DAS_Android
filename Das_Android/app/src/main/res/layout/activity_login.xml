@@ -23,6 +23,7 @@
         android:layout_width="102dp"
         android:layout_height="56dp"
         android:gravity="center"
+        android:layout_marginTop="8dp"
         android:text="로그인"
         android:fontFamily="@font/suit"
         android:textFontWeight="700"
@@ -36,9 +37,9 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="28dp"
+        android:layout_width="50dp"
         android:layout_height="32dp"
-        android:text="ID"
+        android:text="Email"
         android:textColor="@color/black"
         android:textSize="20dp"
         android:textStyle="bold"
@@ -109,7 +110,7 @@
         android:layout_width="322dp"
         android:layout_height="40dp"
         android:layout_marginTop="28dp"
-        android:backgroundTint="#FD3078"
+        android:backgroundTint="#FB5B93"
         app:cardCornerRadius="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -120,33 +121,50 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
+            android:fontFamily="@font/suit"
+            android:textFontWeight="700"
             android:text="로그인"
-            android:textColor="@android:color/white"
-            android:textSize="16dp"
-            android:textStyle="bold" />
-
-    </androidx.cardview.widget.CardView>
-
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/signin_button"
-        android:layout_width="322dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="10dp"
-        android:backgroundTint="#E6E6E6"
-        app:cardCornerRadius="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_button"
-        tools:ignore="MissingConstraints">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:text="가입"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="18dp"
             android:textStyle="bold" />
+
     </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/tv_goSignup"
+        android:layout_width="310dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="계정이 없으신가요?"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/login_button" />
+
+
+    <!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/cardVIew5"-->
+<!--        android:layout_width="322dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:backgroundTint="#E6E6E6"-->
+<!--        app:cardCornerRadius="8dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/login_button"-->
+<!--        tools:ignore="MissingConstraints">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_goSignup"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:gravity="center"-->
+<!--            android:text="가입"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="18dp"-->
+<!--            android:textStyle="bold" />-->
+<!--    </androidx.cardview.widget.CardView>-->
 </androidx.constraintlayout.widget.ConstraintLayout>

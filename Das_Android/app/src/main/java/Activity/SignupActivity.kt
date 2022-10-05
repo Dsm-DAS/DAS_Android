@@ -37,6 +37,16 @@ class SignupActivity : AppCompatActivity() {
 //        }
 //
 
+
+        binding.ivSignupPwprecautions.setOnClickListener{
+            if (binding.textView5.getVisibility() == View.INVISIBLE){
+                binding.textView5.setVisibility(View.VISIBLE)
+            }
+            else{
+                binding.textView5.setVisibility(View.INVISIBLE)
+            }
+        }
+
         binding.ivSignupEmailprecautions.setOnClickListener {
             if (binding.textView4.getVisibility() == View.INVISIBLE){
             binding.textView4.setVisibility(View.VISIBLE)
