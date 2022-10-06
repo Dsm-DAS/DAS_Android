@@ -8,8 +8,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFF</color>
 
-    <color name="main_header">#323232</color>
-    <color name="main_all">#FD3078</color>
-    <color name="club_list">#EEEEEEEE</color>
+    <color name="color_secondary">#323232</color>
+    <color name="color_primary_300">#FB5B93</color>
+    <color name="color_primary_500">#FD3078</color>
+    <color name="color_background_club_item">#EEEEEEEE</color>
     <color name="color_background">#FAFAFA</color>
 </resources>
