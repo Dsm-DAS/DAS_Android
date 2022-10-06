@@ -46,13 +46,13 @@ class SignupActivity : BaseActivity<ActivitySignupBinding>(
         }
 
 
-        setupSpinnerGrade()         // 학년
-        setupSpinnerClass_Num()     // 반
-        setupSpinnerHandler()       // 번호
+        initGradeSpinner()         // 학년
+        initClassSpinner()     // 반
+        initSpinnerHandler()       // 번호
 
 
         binding.tvSignup.setOnClickListener {
-            SignupCheck()               // 회원가입 글자 체크
+            checkSignUp()               // 회원가입 글자 체크
         }
 
         binding.back.setOnClickListener {
@@ -82,7 +82,7 @@ class SignupActivity : BaseActivity<ActivitySignupBinding>(
     }
 
 
-    private fun SignupCheck() {
+    private fun checkSignUp() {
         val email = binding.etSignupEmail.text.length
         val name = binding.etSignupName.text.length
         val password = binding.etSignupPw.text.length
@@ -90,12 +90,12 @@ class SignupActivity : BaseActivity<ActivitySignupBinding>(
         if (email == 0 && name == 0 && password == 0) {
             Toast.makeText(applicationContext, "모든 항목을 입력해주세요", Toast.LENGTH_SHORT).show()
         } else {
-            Signup()
+            signUp()
         }
     }
 
 
-    private fun Signup() {
+    private fun signUp() {
         val email: String = binding.etSignupEmail.text.toString()
         val name: String = binding.etSignupName.text.toString()
         val password: String = binding.etSignupPw.text.toString()
@@ -130,19 +130,19 @@ class SignupActivity : BaseActivity<ActivitySignupBinding>(
     }
 
 
-    private fun setupSpinnerGrade() {
+    private fun initGradeSpinner() {
         val grade = resources.getStringArray(R.array.grade)
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, grade)
         binding.spinnerGrade.adapter = adapter
     }
 
-    private fun setupSpinnerClass_Num() {
+    private fun initClassSpinner() {
         val classes = resources.getStringArray(R.array.classes)
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, classes)
         binding.spinnerClass.adapter = adapter
     }
 
-    private fun setupSpinnerHandler() {
+    private fun initSpinnerHandler() {
         binding.spinnerGrade.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(
                 parent: AdapterView<*>?,
