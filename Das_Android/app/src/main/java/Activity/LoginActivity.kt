@@ -12,11 +12,12 @@ class LoginActivity : BaseActivity<ActivityLoginBinding>(
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setContentView(binding.root)
+        initTvLoginGoToSignUp()
+    }
 
+    private fun initTvLoginGoToSignUp() {
         binding.tvLoginGoToSignUp.setOnClickListener {
-            val intent = Intent(applicationContext, SignupActivity::class.java)
-            startActivity(intent)
+            startActivity(Intent(baseContext, SignupActivity::class.java))
         }
     }
 }
