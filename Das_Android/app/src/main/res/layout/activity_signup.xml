@@ -10,7 +10,7 @@
         android:id="@+id/back"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:background="@drawable/back"
+        android:background="@drawable/icon_back"
         android:backgroundTint="#7E7C7C"
         android:layout_marginTop="15dp"
         android:layout_marginLeft="15dp"
@@ -19,11 +19,11 @@
 
 
     <ImageView
-        android:id="@+id/logo"
+        android:id="@+id/logo_main"
         android:layout_width="180dp"
         android:layout_height="50dp"
         android:layout_marginTop="55dp"
-        android:background="@drawable/img_9"
+        android:background="@drawable/all_logo_das_black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,7 +31,7 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/tv_main_login_title"
         android:layout_width="102dp"
         android:layout_height="40dp"
         android:gravity="center"
@@ -43,7 +43,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintTop_toBottomOf="@+id/logo_main"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -58,7 +58,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.128"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/tv_main_login_title"
         tools:ignore="MissingConstraints" />
 
     <androidx.cardview.widget.CardView
@@ -94,7 +94,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.87"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/tv_main_login_title"
         tools:ignore="MissingConstraints">
 
         <TextView

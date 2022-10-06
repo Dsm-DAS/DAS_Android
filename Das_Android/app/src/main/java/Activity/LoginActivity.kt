@@ -1,15 +1,18 @@
 package Activity
 
+import Base.BaseActivity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import org.techtown.das_android.databinding.ActivityLoginBinding
+import androidx.activity.viewModels
 
-class LoginActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityLoginBinding
+class LoginActivity : BaseActivity<>(
+
+) {
+    private val binding by viewModels<LoginActivity> {  }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityLoginBinding.inflate(layoutInflater)
+
         setContentView(binding.root)
 
         binding.tvGoSignup.setOnClickListener{

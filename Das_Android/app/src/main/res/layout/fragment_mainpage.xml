@@ -43,12 +43,12 @@
             app:layout_constraintVertical_weight="1.5">
 
             <ImageView
-                android:id="@+id/logo"
+                android:id="@+id/logo_main"
                 android:layout_width="80dp"
                 android:layout_height="20dp"
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="32dp"
-                android:background="@drawable/img_4"
+                android:background="@drawable/all_logo_das"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -58,7 +58,7 @@
                 android:layout_height="24dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="32dp"
-                android:background="@drawable/alarm"
+                android:background="@drawable/icon_alarm"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
@@ -80,7 +80,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginBottom="56dp"
-                android:background="@drawable/gpgpg"
+                android:src="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.498"
