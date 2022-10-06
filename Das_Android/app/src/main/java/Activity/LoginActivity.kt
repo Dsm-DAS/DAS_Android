@@ -1,20 +1,23 @@
 package Activity
 
+import Base.BaseActivity
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import org.techtown.das_android.R
 import org.techtown.das_android.databinding.ActivityLoginBinding
 
-class LoginActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityLoginBinding
+class LoginActivity : BaseActivity<ActivityLoginBinding>(
+    R.layout.activity_login
+) {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityLoginBinding.inflate(layoutInflater)
-        setContentView(binding.root)
 
-        binding.tvGoSignup.setOnClickListener{
-            val intent = Intent(applicationContext, SignupActivity::class.java)
-            startActivity(intent)
+        initTvLoginGoToSignUp()
+    }
+
+    private fun initTvLoginGoToSignUp() {
+        binding.tvLoginGoToSignUp.setOnClickListener {
+            startActivity(Intent(baseContext, SignupActivity::class.java))
         }
     }
 }
