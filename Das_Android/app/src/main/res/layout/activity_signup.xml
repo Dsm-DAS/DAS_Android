@@ -154,5 +154,21 @@
             app:layout_constraintHorizontal_chainStyle="spread"
             app:layout_constraintStart_toEndOf="@id/spinner_signup_class"
             app:layout_constraintTop_toBottomOf="@id/et_signup_password" />
+
+        <Button
+            android:id="@+id/btn_signup_signup"
+            android:layout_width="322dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/background_button_primary"
+            android:fontFamily="@font/suit"
+            android:gravity="center"
+            android:text="회원가입"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/spinner_signup_class" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
