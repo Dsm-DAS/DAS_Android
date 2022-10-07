@@ -13,4 +13,7 @@
     <color name="color_primary_500">#FD3078</color>
     <color name="color_background_club_item">#EEEEEEEE</color>
     <color name="color_background">#FAFAFA</color>
+    <color name="color_background_bottom_navigation">#EEEEEE</color>
+    <color name="color_bottom_navigation_icon_not_checked">#888888</color>
+    <color name="color_base">#7E7C7C</color>
 </resources>

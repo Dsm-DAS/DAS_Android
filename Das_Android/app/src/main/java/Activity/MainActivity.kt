@@ -5,9 +5,7 @@ import Fragment.MypageFragment
 import Fragment.DocumentFragment
 import Fragment.HomeFragment
 import Fragment.SearchFragment
-import android.content.Intent
 import android.os.Bundle
-import android.widget.ArrayAdapter
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import org.techtown.das_android.R
@@ -27,13 +25,13 @@ class MainActivity : AppCompatActivity() {
 
     private fun replaceFragment(fragment: Fragment) {
         supportFragmentManager.beginTransaction()
-            .replace(R.id.frame, fragment)
+            .replace(R.id.frame_main, fragment)
             .commit()
     }
 
     fun addFragment(fragment: Fragment){
         supportFragmentManager.beginTransaction()
-            .add(R.id.frame,fragment)
+            .add(R.id.frame_main,fragment)
             .addToBackStack(null)
             .commit()
     }
