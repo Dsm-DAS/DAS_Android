@@ -9,8 +9,8 @@
         tools:context="Activity.MainActivity">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/frame"
-            android:layout_width="match_parent"
+            android:id="@+id/frame_main"
+            android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
             app:layout_constraintEnd_toEndOf="parent"
@@ -19,15 +19,15 @@
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottomNavigationView"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="62dp"
-            android:background="#EEEEEE"
-            app:color="@drawable/selector_bottom_navigation_icon_color"
+            android:background="@color/color_background_bottom_navigation"
             app:itemIconTint="@drawable/selector_bottom_navigation_icon_color"
-            app:itemTextColor="#FD3078"
+            app:itemTextColor="@color/color_primary_500"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:menu="@menu/item_list" />
+            app:layout_constraintTop_toBottomOf="@id/frame_main"
+            app:menu="@menu/menu_item" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
