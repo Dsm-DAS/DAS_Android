@@ -128,5 +128,32 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/et_signup_name" />
+
+        <Spinner
+            android:id="@+id/spinner_signup_grade"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="@id/et_signup_password"
+            app:layout_constraintTop_toBottomOf="@id/et_signup_password" />
+
+        <Spinner
+            android:id="@+id/spinner_signup_class"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            app:layout_constraintEnd_toStartOf="@id/et_signup_number"
+            app:layout_constraintStart_toEndOf="@id/spinner_signup_grade"
+            app:layout_constraintTop_toTopOf="@id/spinner_signup_grade" />
+
+        <EditText
+            android:id="@+id/et_signup_number"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/background_text_box"
+            app:layout_constraintEnd_toEndOf="@id/et_signup_password"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@id/spinner_signup_class"
+            app:layout_constraintTop_toBottomOf="@id/et_signup_password" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
