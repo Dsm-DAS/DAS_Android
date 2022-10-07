@@ -29,21 +29,21 @@ class SignupActivity : BaseActivity<ActivitySignupBinding>(
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        binding.ivSignupPwprecautions.setOnClickListener {
+        /*binding.ivSignupPwprecautions.setOnClickListener {
             if (binding.textView5.getVisibility() == View.INVISIBLE) {
                 binding.textView5.setVisibility(View.VISIBLE)
             } else {
                 binding.textView5.setVisibility(View.INVISIBLE)
             }
-        }
+        }*/
 
-        binding.ivSignupEmailprecautions.setOnClickListener {
+        /*binding.ivSignupEmailprecautions.setOnClickListener {
             if (binding.textView4.getVisibility() == View.INVISIBLE) {
                 binding.textView4.setVisibility(View.VISIBLE)
             } else {
                 binding.textView4.setVisibility(View.INVISIBLE)
             }
-        }
+        }*/
 
 
         initGradeSpinner()         // 학년
@@ -51,17 +51,16 @@ class SignupActivity : BaseActivity<ActivitySignupBinding>(
         initSpinnerHandler()       // 번호
 
 
-        binding.tvSignup.setOnClickListener {
+        binding.btnVerifyEmail.setOnClickListener {
             checkSignUp()               // 회원가입 글자 체크
         }
 
-        binding.back.setOnClickListener {
+        binding.btnSignupBack.setOnClickListener {
             finish()                // 뒤로가기
         }
 
-        binding.etSignupEmail.addTextChangedListener(object : TextWatcher {
+        /*binding.etSignupEmail.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
-
             }
 
             override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
@@ -73,11 +72,9 @@ class SignupActivity : BaseActivity<ActivitySignupBinding>(
                 }
             }
 
-
             override fun afterTextChanged(p0: Editable?) {
-
             }
-        })
+        })*/
 
     }
 
@@ -85,7 +82,7 @@ class SignupActivity : BaseActivity<ActivitySignupBinding>(
     private fun checkSignUp() {
         val email = binding.etSignupEmail.text.length
         val name = binding.etSignupName.text.length
-        val password = binding.etSignupPw.text.length
+        val password = binding.etSignupPassword.text.length
 
         if (email == 0 && name == 0 && password == 0) {
             Toast.makeText(applicationContext, "모든 항목을 입력해주세요", Toast.LENGTH_SHORT).show()
@@ -98,7 +95,7 @@ class SignupActivity : BaseActivity<ActivitySignupBinding>(
     private fun signUp() {
         val email: String = binding.etSignupEmail.text.toString()
         val name: String = binding.etSignupName.text.toString()
-        val password: String = binding.etSignupPw.text.toString()
+        val password: String = binding.etSignupPassword.text.toString()
         val grade = DSMGrade.toString().toInt()
         val classNum = DSMClass.toString().toInt()
         val number: Int = binding.etSignupNumber.toString().toInt()
