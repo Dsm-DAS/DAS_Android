@@ -20,4 +20,11 @@ class LoginActivity : BaseActivity<ActivityLoginBinding>(
             startActivity(Intent(baseContext, SignupActivity::class.java))
         }
     }
+
+    override fun initView() {
+
+    }
+
+    override fun observeEvent() {
+    }
 }

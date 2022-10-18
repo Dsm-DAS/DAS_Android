@@ -13,23 +13,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-
-        <!--<TextView
-            android:id="@+id/culblist_all2"
-            android:layout_width="80dp"
-            android:layout_height="40dp"
-            android:fontFamily="@font/suit"
-            android:text="모두 보기"
-            android:textAlignment="center"
-            android:textColor="@color/main_all"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.37"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.418" />-->
-
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/main_header"
             android:layout_width="match_parent"

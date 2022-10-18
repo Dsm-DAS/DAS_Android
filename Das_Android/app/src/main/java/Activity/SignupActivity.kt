@@ -22,17 +22,16 @@ class SignupActivity : BaseActivity<ActivitySignupBinding>(
         var DSMGrade: String = ""
     }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(binding.root)
-
+    override fun initView() {
         /*binding.ivSignupPwprecautions.setOnClickListener {
-            if (binding.textView5.getVisibility() == View.INVISIBLE) {
-                binding.textView5.setVisibility(View.VISIBLE)
-            } else {
-                binding.textView5.setVisibility(View.INVISIBLE)
-            }
-        }*/
+=======
+      binding.ivSignupEmailprecautions.setOnClickListener {
+          if (binding.textView5.getVisibility() == View.INVISIBLE) {
+              binding.textView5.setVisibility(View.VISIBLE)
+          } else {
+              binding.textView5.setVisibility(View.INVISIBLE)
+          }
+      }*/
 
         /*binding.ivSignupEmailprecautions.setOnClickListener {
             if (binding.textView4.getVisibility() == View.INVISIBLE) {
@@ -41,6 +40,7 @@ class SignupActivity : BaseActivity<ActivitySignupBinding>(
                 binding.textView4.setVisibility(View.INVISIBLE)
             }
         }*/
+
 
 
         initGradeSpinner()         // 학년
@@ -72,7 +72,6 @@ class SignupActivity : BaseActivity<ActivitySignupBinding>(
             override fun afterTextChanged(p0: Editable?) {
             }
         })*/
-
     }
 
 
@@ -168,5 +167,10 @@ class SignupActivity : BaseActivity<ActivitySignupBinding>(
                 }
 
             }
+    }
+
+
+    override fun observeEvent() {
+
     }
 }
