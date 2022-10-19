@@ -6,9 +6,7 @@ import Request.LoginRequest
 import Request.SignupRequest
 import Response.LoginResponse
 import retrofit2.Call
-import retrofit2.http.Body
-import retrofit2.http.POST
-import retrofit2.http.PUT
+import retrofit2.http.*
 
 interface UserApi {
 
@@ -31,5 +29,9 @@ interface UserApi {
     fun emailCheck(
         @Body request: EmailCheckRequest
     ) : Call<Void>
-    
+
+    @PATCH("user/token")
+    fun token(
+        @Header("Authorization") String : String
+    ) : Call<LoginResponse>
 }

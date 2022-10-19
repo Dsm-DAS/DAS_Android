@@ -2,6 +2,7 @@ package Activity
 
 import Api.ApiProvider
 import Base.BaseActivity
+import Request.EmailRequest
 import Request.SignupRequest
 import android.content.Intent
 import android.os.Bundle
@@ -12,6 +13,7 @@ import android.widget.Toast
 import org.techtown.das_android.R
 import org.techtown.das_android.databinding.ActivitySignupBinding
 import retrofit2.Call
+import retrofit2.Callback
 import retrofit2.Response
 
 class SignupActivity : BaseActivity<ActivitySignupBinding>(
@@ -56,6 +58,10 @@ class SignupActivity : BaseActivity<ActivitySignupBinding>(
             finish()                // 뒤로가기
         }
 
+        binding.btnVerifyEmail.setOnClickListener {
+            checkEmail()
+        }
+
         /*binding.etSignupEmail.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
             }
@@ -72,6 +78,21 @@ class SignupActivity : BaseActivity<ActivitySignupBinding>(
             override fun afterTextChanged(p0: Editable?) {
             }
         })*/
+    }
+
+    private fun checkEmail() {
+        val request = EmailRequest(binding.etSignupEmail.toString())
+
+        ApiProvider.retrofit.email(request).enqueue(object : Callback<Void>{
+            override fun onResponse(call: Call<Void>, response: Response<Void>) {
+
+            }
+
+            override fun onFailure(call: Call<Void>, t: Throwable) {
+                Toast.makeText(applicationContext, "이메일을 다시 확인해 주세여", Toast.LENGTH_SHORT).show()
+            }
+
+        })
     }
 
 
